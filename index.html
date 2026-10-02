@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page - Khám Phá Khóa Học Công Nghệ</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <style>
+      /* Tuỳ biến thêm một số hiệu ứng hover mượt mà */
+      .feature-card {
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+      }
+      .feature-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body class="bg-light text-dark">
+    <!-- ==================== 1. NAVBAR / HEADER ==================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-code-slash text-primary me-2"></i>TechEdu
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#hero">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Tính năng</a>
+            </li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+              <a class="btn btn-outline-light btn-sm px-3" href="#cta"
+                >Đăng ký</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ==================== 2. BANNER / HERO SECTION ==================== -->
+    <!-- Sử dụng Container, Row/Col thay thế cho Jumbotron cũ -->
+    <header id="hero" class="py-5 bg-white border-bottom">
+      <div class="container py-lg-5">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span
+              class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3"
+            >
+              Nền tảng học lập trình hiện đại
+            </span>
+            <h1 class="display-4 fw-bold lh-1 mb-3">
+              Khởi đầu sự nghiệp lập trình viên cùng
+              <span class="text-primary">TechEdu</span>
+            </h1>
+            <p class="lead text-muted mb-4">
+              Làm chủ kỹ năng Frontend, Backend và Responsive Web Design qua các
+              dự án thực chiến chuẩn doanh nghiệp.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#cta" class="btn btn-primary btn-lg px-4 me-md-2">
+                <i class="bi bi-rocket-takeoff me-2"></i>Đăng ký ngay
+              </a>
+              <a href="#about" class="btn btn-outline-secondary btn-lg px-4"
+                >Tìm hiểu thêm</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+              alt="Hero Banner Lập Trình"
+              class="img-fluid rounded-4 shadow"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================== 3. SECTION GIỚI THIỆU (ABOUT) ==================== -->
+    <section id="about" class="py-5">
+      <div class="container py-4">
+        <div
+          class="row align-items-center gy-4 flex-column-reverse flex-lg-row"
+        >
+          <div class="col-lg-6">
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+              alt="Học tập cùng chuyên gia"
+              class="img-fluid rounded-4 shadow-sm"
+            />
+          </div>
+          <div class="col-lg-6">
+            <div class="ps-lg-4">
+              <h6 class="text-primary text-uppercase fw-bold tracking-wide">
+                Về chúng tôi
+              </h6>
+              <h2 class="fw-bold mb-3">
+                Chương trình đào tạo chú trọng thực hành
+              </h2>
+              <p class="text-secondary mb-3">
+                Chúng tôi hiểu rằng cách nhanh nhất để làm chủ công nghệ là bắt
+                tay vào thực hiện sản phẩm thực tế. Lộ trình bài giảng được
+                thiết kế cô đọng, dễ hiểu ngay cả với người mới bắt đầu.
+              </p>
+              <ul class="list-unstyled mb-4">
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>100%
+                  thời lượng gắn liền với code thực tế
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>Giảng
+                  viên hỗ trợ code review chi tiết từng bài
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-check-circle-fill text-success me-2"></i>Xây
+                  dựng hoàn thiện Portfolio sau khoá học
+                </li>
+              </ul>
+              <a href="#cta" class="btn btn-dark">Xem lộ trình học</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. SECTION TÍNH NĂNG (FEATURES) ==================== -->
+    <section id="features" class="py-5 bg-white border-top border-bottom">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h6 class="text-primary text-uppercase fw-bold">Điểm nổi bật</h6>
+          <h2 class="fw-bold">Tại sao bạn nên chọn TechEdu?</h2>
+          <p class="text-muted">
+            Các giá trị cốt lõi giúp bạn tự tin ứng tuyển vị trí thực tập và
+            fresher.
+          </p>
+        </div>
+
+        <!-- Grid 4 cột trên màn hình lớn (col-lg-3), 2 cột trên tablet (col-md-6) -->
+        <div class="row g-4">
+          <!-- Tính năng 1 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card h-100 p-3 border-0 bg-light rounded-4 feature-card"
+            >
+              <div class="card-body text-center">
+                <div
+                  class="feature-icon-wrapper bg-primary text-white rounded-circle mb-3 fs-4"
+                >
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h5 class="card-title fw-bold">Học mọi lúc mọi nơi</h5>
+                <p class="card-text text-muted small">
+                  Nền tảng trực tuyến linh hoạt, dễ dàng truy cập và học tập
+                  trên mọi thiết bị.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tính năng 2 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card h-100 p-3 border-0 bg-light rounded-4 feature-card"
+            >
+              <div class="card-body text-center">
+                <div
+                  class="feature-icon-wrapper bg-success text-white rounded-circle mb-3 fs-4"
+                >
+                  <i class="bi bi-folder-check"></i>
+                </div>
+                <h5 class="card-title fw-bold">Dự án thực tế</h5>
+                <p class="card-text text-muted small">
+                  Xây dựng hơn 10 trang web chuẩn UI/UX từ cơ bản đến phức tạp
+                  trước khi tốt nghiệp.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tính năng 3 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card h-100 p-3 border-0 bg-light rounded-4 feature-card"
+            >
+              <div class="card-body text-center">
+                <div
+                  class="feature-icon-wrapper bg-warning text-white rounded-circle mb-3 fs-4"
+                >
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h5 class="card-title fw-bold">Cộng đồng sôi nổi</h5>
+                <p class="card-text text-muted small">
+                  Giao lưu, hỏi đáp và chia sẻ kinh nghiệm cùng hàng ngàn học
+                  viên và mentor nhiệt tình.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tính năng 4 -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card h-100 p-3 border-0 bg-light rounded-4 feature-card"
+            >
+              <div class="card-body text-center">
+                <div
+                  class="feature-icon-wrapper bg-danger text-white rounded-circle mb-3 fs-4"
+                >
+                  <i class="bi bi-award-fill"></i>
+                </div>
+                <h5 class="card-title fw-bold">Chứng chỉ uy tín</h5>
+                <p class="card-text text-muted small">
+                  Nhận chứng chỉ hoàn thành khóa học để khẳng định năng lực trên
+                  CV cá nhân.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. SECTION CTA (CALL TO ACTION) ==================== -->
+    <section id="cta" class="py-5 bg-primary text-white text-center">
+      <div class="container py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="display-6 fw-bold mb-3">
+              Sẵn sàng nâng tầm kỹ năng của bạn?
+            </h2>
+            <p class="lead mb-4 text-white-50">
+              Đăng ký tham gia ngay hôm nay để nhận ưu đãi học phí 30% và bộ tài
+              liệu hướng dẫn miễn phí.
+            </p>
+            <div
+              class="d-flex flex-column flex-sm-row justify-content-center gap-3"
+            >
+              <button
+                type="button"
+                class="btn btn-light btn-lg px-4 text-primary fw-semibold"
+              >
+                Nhận tư vấn miễn phí
+              </button>
+              <button type="button" class="btn btn-outline-light btn-lg px-4">
+                Xem lịch khai giảng
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer
+      class="py-4 bg-dark text-white-50 text-center border-top border-secondary"
+    >
+      <div class="container">
+        <p class="mb-0 small">
+          © 2026 TechEdu Landing Page. Được xây dựng bằng Bootstrap 5.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
